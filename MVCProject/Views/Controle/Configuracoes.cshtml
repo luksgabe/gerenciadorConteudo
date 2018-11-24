@@ -1,0 +1,36 @@
+﻿
+@Styles.Render("~/Content/Sortable")
+
+
+
+
+@{
+    ViewBag.Title = "Configurações";
+    Layout = "~/Views/Shared/_Controle_Template.cshtml";
+}
+
+
+
+@using (Html.BeginForm("Configuracoes", "Controle", FormMethod.Post, new { role = "form", @class = "login-form" }))
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="container">
+        <div class="form-group row">
+            <h2>Sortable List Group</h2>
+            <ul class="list-group list-group-sortable">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+    </div>
+}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+@Scripts.Render("~/bundles/sortable")
+

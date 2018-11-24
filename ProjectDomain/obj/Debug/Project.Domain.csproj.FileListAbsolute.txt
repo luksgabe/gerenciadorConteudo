@@ -1,0 +1,6 @@
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\bin\Debug\ProjectDomain.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\bin\Debug\ProjectDomain.pdb
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\obj\Debug\Project.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\obj\Debug\Project.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\obj\Debug\ProjectDomain.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\ProjectDomain\obj\Debug\ProjectDomain.pdb

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E9B5D1D-5305-405C-981F-857144C32C7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectDomain</RootNamespace>
+    <AssemblyName>ProjectDomain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Categoria.cs" />
+    <Compile Include="Entities\Dado.cs" />
+    <Compile Include="Entities\GrupoPaginas.cs" />
+    <Compile Include="Entities\ImagemCategoria.cs" />
+    <Compile Include="Entities\ImagemDado.cs" />
+    <Compile Include="Entities\ImagemSegmento.cs" />
+    <Compile Include="Entities\ImagemSubSeg.cs" />
+    <Compile Include="Entities\Pagina.cs" />
+    <Compile Include="Entities\PaginaControle.cs" />
+    <Compile Include="Entities\Segmento.cs" />
+    <Compile Include="Entities\SubSegmento.cs" />
+    <Compile Include="Entities\UploadImagem.cs" />
+    <Compile Include="Entities\Usuario.cs" />
+    <Compile Include="Interfaces\Repositories\ICategoriaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IDadosRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IGrupoPaginasRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IImagemCategoriaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IImagemDadoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IImagemSegmentoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IImagemSubSegRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPaginaControleRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPaginaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ISegmentoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ISubSegmentoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUploadImagemRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IUsuarioRepository.cs" />
+    <Compile Include="Interfaces\Services\ICategoriaService.cs" />
+    <Compile Include="Interfaces\Services\IDadoService.cs" />
+    <Compile Include="Interfaces\Services\IGrupoPaginasService.cs" />
+    <Compile Include="Interfaces\Services\IImagemCategoriaService.cs" />
+    <Compile Include="Interfaces\Services\IImagemDadoService.cs" />
+    <Compile Include="Interfaces\Services\IImagemSegmentoService.cs" />
+    <Compile Include="Interfaces\Services\IImagemSubSegmentoService.cs" />
+    <Compile Include="Interfaces\Services\IPaginaControleService.cs" />
+    <Compile Include="Interfaces\Services\IPaginaService.cs" />
+    <Compile Include="Interfaces\Services\ISegmentoService.cs" />
+    <Compile Include="Interfaces\Services\IService.cs" />
+    <Compile Include="Interfaces\Services\ISubSegmentoService.cs" />
+    <Compile Include="Interfaces\Services\IUploadImagemService.cs" />
+    <Compile Include="Interfaces\Services\IUsuarioService.cs" />
+    <Compile Include="Interfaces\Services\Specific\IEmailService.cs" />
+    <Compile Include="Interfaces\Services\Specific\IEncryptionService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CategoriaService.cs" />
+    <Compile Include="Services\DadoService.cs" />
+    <Compile Include="Services\GrupoPaginasService.cs" />
+    <Compile Include="Services\ImagemCategoriaService.cs" />
+    <Compile Include="Services\ImagemDadoService.cs" />
+    <Compile Include="Services\ImagemSegmentoService.cs" />
+    <Compile Include="Services\ImagemSubSegmentoService.cs" />
+    <Compile Include="Services\PaginaControleService.cs" />
+    <Compile Include="Services\PaginaService.cs" />
+    <Compile Include="Services\SegmentoService.cs" />
+    <Compile Include="Services\Service.cs" />
+    <Compile Include="Services\Specific\EmailService.cs" />
+    <Compile Include="Services\Specific\EncryptionService.cs" />
+    <Compile Include="Services\Specific\SessionControl.cs" />
+    <Compile Include="Services\Specific\SessionService.cs" />
+    <Compile Include="Services\SubSegmentoService.cs" />
+    <Compile Include="Services\UploadImagemService.cs" />
+    <Compile Include="Services\UsuarioService.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

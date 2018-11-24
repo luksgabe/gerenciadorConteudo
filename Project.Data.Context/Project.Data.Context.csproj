@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A95BA28A-CD17-4C15-9EA8-33B2346268BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.Data.Context</RootNamespace>
+    <AssemblyName>Project.Data.Context</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\BaseDbContext.cs" />
+    <Compile Include="Config\ContextInitializer.cs" />
+    <Compile Include="Interfaces\IContextManager.cs" />
+    <Compile Include="Interfaces\IDbContext.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Mapping\CategoriaMap.cs" />
+    <Compile Include="Mapping\DadoMap.cs" />
+    <Compile Include="Mapping\GrupoPaginasMap.cs" />
+    <Compile Include="Mapping\ImagemCategoriaMap.cs" />
+    <Compile Include="Mapping\ImagemDadoMap.cs" />
+    <Compile Include="Mapping\ImagemSegmentoMap.cs" />
+    <Compile Include="Mapping\ImagemSubSegmentoMap.cs" />
+    <Compile Include="Mapping\PaginaControleMap.cs" />
+    <Compile Include="Mapping\PaginaMap.cs" />
+    <Compile Include="Mapping\SegmentoMap.cs" />
+    <Compile Include="Mapping\SubSegmentoMap.cs" />
+    <Compile Include="Mapping\UploadImagemMap.cs" />
+    <Compile Include="Mapping\UsuarioMap.cs" />
+    <Compile Include="Migrations\201803022026309_02-03-2018.cs" />
+    <Compile Include="Migrations\201803022026309_02-03-2018.Designer.cs">
+      <DependentUpon>201803022026309_02-03-2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803220021118_21-03-2018.cs" />
+    <Compile Include="Migrations\201803220021118_21-03-2018.Designer.cs">
+      <DependentUpon>201803220021118_21-03-2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803220036137_add-collun.cs" />
+    <Compile Include="Migrations\201803220036137_add-collun.Designer.cs">
+      <DependentUpon>201803220036137_add-collun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803232047224_23-03-2018.cs" />
+    <Compile Include="Migrations\201803232047224_23-03-2018.Designer.cs">
+      <DependentUpon>201803232047224_23-03-2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803232052527_alter-collun.cs" />
+    <Compile Include="Migrations\201803232052527_alter-collun.Designer.cs">
+      <DependentUpon>201803232052527_alter-collun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProjectContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CategoriaRepository.cs" />
+    <Compile Include="Repositories\DadoRepository.cs" />
+    <Compile Include="Repositories\GrupoPaginaRepository.cs" />
+    <Compile Include="Repositories\ImagemCategoriaRepository.cs" />
+    <Compile Include="Repositories\ImagemDadoRepository.cs" />
+    <Compile Include="Repositories\ImagemSegmentoRepository.cs" />
+    <Compile Include="Repositories\ImagemSubSegRepository.cs" />
+    <Compile Include="Repositories\PaginaControleRepository.cs" />
+    <Compile Include="Repositories\PaginaRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\SegmentoRepository.cs" />
+    <Compile Include="Repositories\SubSegmentoRepository.cs" />
+    <Compile Include="Repositories\UploadImagemRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803022026309_02-03-2018.resx">
+      <DependentUpon>201803022026309_02-03-2018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803220021118_21-03-2018.resx">
+      <DependentUpon>201803220021118_21-03-2018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803220036137_add-collun.resx">
+      <DependentUpon>201803220036137_add-collun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803232047224_23-03-2018.resx">
+      <DependentUpon>201803232047224_23-03-2018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803232052527_alter-collun.resx">
+      <DependentUpon>201803232052527_alter-collun.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectDomain\Project.Domain.csproj">
+      <Project>{5e9b5d1d-5305-405c-981f-857144c32c7b}</Project>
+      <Name>Project.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

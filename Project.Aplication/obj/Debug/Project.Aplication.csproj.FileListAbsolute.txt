@@ -1,0 +1,14 @@
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\Project.Aplication.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\Project.Aplication.pdb
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\Project.Data.Context.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\ProjectDomain.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\EntityFramework.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\Project.Data.Context.pdb
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\Project.Data.Context.dll.config
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\ProjectDomain.pdb
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\bin\Debug\EntityFramework.xml
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\obj\Debug\Project.Aplication.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\obj\Debug\Project.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\obj\Debug\Project.Aplication.csproj.CopyComplete
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\obj\Debug\Project.Aplication.dll
+C:\Users\Lucas\source\repos\ProjetoGerenciadorConteudo\Project.Aplication\obj\Debug\Project.Aplication.pdb

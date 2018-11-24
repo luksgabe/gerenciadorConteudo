@@ -1,0 +1,27 @@
+/* --- Inicio CSS elementos sidebar  --- */
+
+.sidebar {
+    background-color: #ffad33 !important;
+}
+
+.sidebar .nav-link {
+	color: #fff !important;
+}
+
+.sidebar .nav-link:hover {
+	color: #000 !important;
+}
+
+.sidebar .icon-iten:hover {
+	color: #000 !important;
+}
+
+.sidebar-sticky .dropdown-menu {
+    background-color: #ffad33;
+}
+
+.content {
+    padding-left: 220px;
+}
+
+/* --- Fim CSS elementos sidebar --- */
